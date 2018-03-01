@@ -2,7 +2,7 @@
 const createContact = (z, bundle) => {
   const responsePromise = z.request({
     method: 'POST',
-    url: 'https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email/{{bundle.inputData.email}}/?hapikey={{process.env.API_KEY}}',
+    url: 'https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email/{{bundle.inputData.email}}/?hapikey={{bundle.authData.api_key}}',
     body: {
       "properties": [
         {

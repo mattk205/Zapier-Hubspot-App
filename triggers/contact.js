@@ -1,6 +1,6 @@
 const getContact = (z, bundle) => {
   const responsePromise = z.request({
-    url: "https://api.hubapi.com/contacts/v1/lists/recently_updated/contacts/recent?hapikey={{process.env.API_KEY}}",
+    url: "https://api.hubapi.com/contacts/v1/lists/recently_updated/contacts/recent?hapikey={{bundle.authData.api_key}}",
     method: "GET",
   });
   return responsePromise
