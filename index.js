@@ -1,3 +1,4 @@
+const DealTrigger = require('./triggers/deal');
 const FindcontactSearch = require('./searches/find_contact');
 const ContactCreate = require('./creates/contact');
 const getContact = require('./triggers/contact');
@@ -38,6 +39,7 @@ const App = {
 
   // If you want your trigger to show up, you better include it here!
   triggers: {
+    [DealTrigger.key]: DealTrigger,
     [getContact.key]: getContact,
   },
 
