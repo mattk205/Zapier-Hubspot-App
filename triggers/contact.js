@@ -16,7 +16,6 @@ const getContact = (z, bundle) => {
         contact.id = contact["canonical-vid"];
         return contact;
       });
-      z.console.log(list);
       return list;
     });
 };

@@ -1,3 +1,4 @@
+const FindcontactSearch = require('./searches/find_contact');
 const ContactCreate = require('./creates/contact');
 const getContact = require('./triggers/contact');
 
@@ -42,6 +43,7 @@ const App = {
 
   // If you want your searches to show up, you better include it here!
   searches: {
+    [FindcontactSearch.key]: FindcontactSearch,
   },
 
   // If you want your creates to show up, you better include it here!
