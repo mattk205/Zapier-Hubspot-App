@@ -10,7 +10,7 @@ const triggerDeal = (z, bundle) => {
         throw new Error(`Unexpected status code ${response.status}`);
       }
 
-      var dealList = response.json.results;
+      const dealList = response.json.results;
 
       dealList = dealList.map(function(deal) {
         deal.id = deal["dealId"];
